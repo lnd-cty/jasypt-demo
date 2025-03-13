@@ -9,12 +9,14 @@ import jakarta.persistence.Id;
 import lnd.sample.jasypt.model.entity.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @SuperBuilder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 @Data
 @Entity
 public class User extends BaseEntity {
