@@ -27,11 +27,12 @@ public class SwaggerConfig {
 
     @Bean
     OpenAPI openAPI() {
+        String title = "Project Title";
         String email = "admin@localhost.com";
-        String website = "localhost.com";
+//        String website = "localhost.com";
         return new OpenAPI()
                 .info(new Info()
-                        .title(website)
+                        .title(title)
                         .version("1.0.0")
                         .contact(new Contact()
                                     .email("support@hdsaison.com.vn")
