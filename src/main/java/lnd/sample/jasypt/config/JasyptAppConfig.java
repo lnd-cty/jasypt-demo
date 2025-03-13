@@ -7,6 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @ComponentScan({"lnd.sample.app02.service"})
 @PropertySource("application.properties")
-public class AppConfigForJasyptStarter {
+public class JasyptAppConfig {
 
 }
